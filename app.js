@@ -1,4 +1,4 @@
-//jshint esversion:6
+
 const express = require("express");
 const mongoose = require("mongoose");
 
@@ -7,9 +7,9 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 
-// mongoose.connect("mongodb://localhost:27017/movieDB", {useNewUrlParser : true,  useUnifiedTopology: true });
+// mongoose.connect("mongodb://localhost:27017/modb", {useNewUrlParser : true,  useUnifiedTopology: true });
 
-// DataBase added in MongoDb Atlas */
+
  mongoose.connect("mongodb+srv://amaanS:amaan123@assignment-hulh0.mongodb.net/modb", {
       useNewUrlParser: true ,  useUnifiedTopology: true 
  });
